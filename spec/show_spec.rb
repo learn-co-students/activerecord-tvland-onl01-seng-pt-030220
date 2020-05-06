@@ -29,7 +29,6 @@ describe Show do
     character.actor = andrew
     show.characters << character
     show.save
-
     expect(show.actors_list.length).to eq(1)
     expect(show.actors_list).to include('Andrew Lincoln')
 
